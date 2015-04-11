@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:gravity="center_horizontal"
+    android:orientation="horizontal">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/bk_id_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="商品编号"/>
+        <TextView
+            android:id="@+id/bk_id"
+            android:maxLines="1"
+            android:maxWidth="12dp"
+            android:ellipsize="end"
+            android:layout_below="@id/bk_id_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/name_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="商品名称"/>
+        <TextView
+            android:layout_below="@id/name_label"
+            android:id="@+id/bk_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/bk_num_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="商品数量"/>
+        <TextView
+            android:id="@+id/bk_num"
+            android:layout_below="@id/bk_num_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <RelativeLayout 
+        android:id="@+id/search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal">
+       	<Button
+	        android:id="@+id/search_Button"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@+id/search_edittext"
+	        android:text="搜索" />
+
+       	<EditText
+       	    android:id="@+id/search_edittext"
+       	    android:layout_width="wrap_content"
+       	    android:layout_height="wrap_content"
+       	    android:layout_alignBaseline="@+id/search_Button"
+       	    android:layout_alignBottom="@+id/search_Button"
+       	    android:layout_alignParentLeft="true"
+       	    android:ems="10"
+       	    android:hint="@string/search_hint" >
+
+       	    <requestFocus />
+       	</EditText>
+
+    </RelativeLayout>
+    
+	
+    <GridView
+        android:id="@+id/girdview"
+        android:layout_below="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:horizontalSpacing="2dp"
+        android:verticalSpacing="5dp"
+        android:numColumns="3"
+        android:gravity="center" >
+    </GridView>
+</RelativeLayout>

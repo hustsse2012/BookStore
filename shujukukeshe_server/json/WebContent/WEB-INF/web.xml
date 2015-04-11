@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>CampusSecret</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>LoginServlet</display-name>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>com.sunhao.login.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>SearchServlet</display-name>
+    <servlet-name>SearchServlet</servlet-name>
+    <servlet-class>com.bookstore.servlet.SearchServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SearchServlet</servlet-name>
+    <url-pattern>/SearchServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>RegistServlet</display-name>
+    <servlet-name>RegistServlet</servlet-name>
+    <servlet-class>com.sunhao.regist.RegistServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RegistServlet</servlet-name>
+    <url-pattern>/RegistServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>FindPswdServlet</display-name>
+    <servlet-name>FindPswdServlet</servlet-name>
+    <servlet-class>com.sunhao.findpswd.FindPswdServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FindPswdServlet</servlet-name>
+    <url-pattern>/FindPswdServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ReplyServlet</display-name>
+    <servlet-name>ReplyServlet</servlet-name>
+    <servlet-class>com.sunhao.reply.ReplyServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ReplyServlet</servlet-name>
+    <url-pattern>/ReplyServlet</url-pattern>
+  </servlet-mapping>
+   <servlet>
+    <description></description>
+    <display-name>BooksServlet</display-name>
+    <servlet-name>BooksServlet</servlet-name>
+    <servlet-class>com.bookstore.servlet.BooksServlet</servlet-class>
+  </servlet>
+    <servlet-mapping>
+    <servlet-name>BooksServlet</servlet-name>
+    <url-pattern>/BooksServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>OrderDetailServlet</display-name>
+    <servlet-name>OrderDetailServlet</servlet-name>
+    <servlet-class>com.bookstore.servlet.OrderDetailServlet</servlet-class>
+  </servlet>
+    <servlet-mapping>
+    <servlet-name>OrderDetailServlet</servlet-name>
+    <url-pattern>/OrderDetailServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>CommentServlet</display-name>
+    <servlet-name>CommentServlet</servlet-name>
+    <servlet-class>com.sunhao.comment.CommentServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description></description>
+    <display-name>CartServlet</display-name>
+    <servlet-name>CartServlet</servlet-name>
+    <servlet-class>com.bookstore.servlet.CartServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <description>OrderItemServlet</description>
+    <display-name>OrderItemServlet</display-name>
+    <servlet-name>OrderItemServlet</servlet-name>
+    <servlet-class>com.bookstore.servlet.OrderItemServlet</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>OrderItemServlet</servlet-name>
+    <url-pattern>/OrderItemServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <description>OrderServlet</description>
+    <display-name>OrderServlet</display-name>
+    <servlet-name>OrderServlet</servlet-name>
+    <servlet-class>com.bookstore.servlet.OrderServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>OrderServlet</servlet-name>
+    <url-pattern>/OrderServlet</url-pattern>
+  </servlet-mapping>
+<servlet>
+    <description>GetCartServlet</description>
+    <display-name>GetCartServlet</display-name>
+    <servlet-name>GetCartServlet</servlet-name>
+    <servlet-class>com.bookstore.servlet.GetCartServlet</servlet-class>
+  </servlet>
+
+
+<servlet-mapping>
+    <servlet-name>GetCartServlet</servlet-name>
+    <url-pattern>/GetCartServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CartServlet</servlet-name>
+    <url-pattern>/CartServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description>GetUserAccount</description>
+    <display-name>GetUserAccount</display-name>
+    <servlet-name>GetUserAccount</servlet-name>
+    <servlet-class>com.bookstore.servlet.GetUserAccount</servlet-class>
+  </servlet>
+  <servlet>
+    <description>GetOrderServlet</description>
+    <display-name>GetOrderServlet</display-name>
+    <servlet-name>GetOrderServlet</servlet-name>
+    <servlet-class>com.bookstore.servlet.GetOrderServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>HasPayOrderServlet</description>
+    <display-name>HasPayOrderServlet</display-name>
+    <servlet-name>HasPayOrderServlet</servlet-name>
+    <servlet-class>com.bookstore.servlet.HasPayOrderServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddMoneyServlet</servlet-name>
+    <servlet-class>com.bookstore.servlet.AddMoneyServlet</servlet-class>
+  </servlet>
+
+
+
+  <servlet-mapping>
+    <servlet-name>GetUserAccount</servlet-name>
+    <url-pattern>/GetUserAccount</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CommentServlet</servlet-name>
+    <url-pattern>/CommentServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetOrderServlet</servlet-name>
+    <url-pattern>/GetOrderServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>HasPayOrderServlet</servlet-name>
+    <url-pattern>/HasPayOrderServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddMoneyServlet</servlet-name>
+    <url-pattern>/servlet/AddMoneyServlet</url-pattern>
+  </servlet-mapping>
+
+  
+ 
+  
+  <context-param>
+<param-name>dburl</param-name>
+<param-value>jdbc:mysql://localhost:3306/bookstore</param-value>
+</context-param>
+ <context-param>
+ 
+<param-name>driverName</param-name>
+<param-value>com.mysql.jdbc.Driver</param-value> 
+
+</context-param>
+
+<context-param>
+
+
+<param-name>dbusername</param-name>            
+<param-value>root</param-value>     
+ 
+</context-param>
+
+<context-param>
+
+  <param-name>dbpassword</param-name>        
+   <param-value>root</param-value>  
+     
+</context-param>
+
+
+<context-param>
+
+<param-name>dbName</param-name>    
+<param-value>bookstore</param-value>   
+ 
+
+</context-param>
+</web-app>

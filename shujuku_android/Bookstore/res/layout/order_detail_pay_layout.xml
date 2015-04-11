@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <TextView
+        android:id="@+id/rec_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="收货人信息" />
+    
+    <RelativeLayout
+        android:id="@+id/name"
+        android:layout_below="@id/rec_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/name_lable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="收货人 ： "/>
+        
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_toRightOf="@id/name_lable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_below="@id/name"
+        android:id="@+id/addr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/addr_lable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="地址 ： "/>
+        
+        <TextView
+            android:id="@+id/address"
+            android:layout_toRightOf="@id/addr_lable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_below="@id/addr"
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/phone_lable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="手机号码： "/>
+        
+        <TextView
+            android:id="@+id/user_phone"
+            android:layout_toRightOf="@id/phone_lable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    
+    <TextView
+        android:id="@+id/time_label"
+        android:layout_below="@id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="配送方式" />
+    
+    <RelativeLayout
+        android:id="@+id/after_goods"
+        android:layout_below="@id/time_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/after_lable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="确认货到付款?    "/>
+        
+        <Button
+            android:id="@+id/pay_after_goods"
+            android:layout_toRightOf="@id/after_lable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="是"/>
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/ordertime"
+        android:layout_below="@id/after_goods"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/ordertime_lable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="订单生成时间： "/>
+        
+        <TextView
+            android:id="@+id/order_time"
+            android:layout_toRightOf="@id/ordertime_lable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_below="@id/ordertime"
+        android:id="@+id/deliver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/deliver_lable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="配送时间： "/>
+        
+        <TextView
+            android:id="@+id/deliver_time"
+            android:layout_toRightOf="@id/deliver_lable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_below="@id/deliver"
+        android:id="@+id/should_pay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/should_pay_lable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="应付款： "/>
+        
+        <TextView
+            android:id="@+id/money_should_pay"
+            android:layout_toRightOf="@id/should_pay_lable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    
+    <ListView
+        android:layout_marginTop="5dp"
+        android:id="@+id/order_item_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/should_pay" >
+        
+    </ListView>
+    
+    <Button 
+        android:id="@+id/pay_button"
+        android:layout_below="@id/order_item_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="确认支付"/>
+
+</RelativeLayout>
